@@ -3,7 +3,7 @@
 Ceci est un **TP d'évaluation** sur une base de donnés `neo4j`
 - [Présentation](#présentation)
     - [Objectifs](#objectifs)
-    - [Ressources](#Ressources)
+    - [Ressources](#ressources)
     - [Création](#création)
     - [Requêtes](#requêtes)
     - [Application](#application)
@@ -35,8 +35,6 @@ Ceci est un **TP d'évaluation** sur une base de donnés `neo4j`
 - `start` : station de début de la liaison
 - `stop` : station de fin de la liaison
 - `ligne` : ligne de la liaison
-
----
 
 ## Création
 Le fichier [load_database.py](load_database.py) est un script python permettant de remplir la base `neo4j` avec :
@@ -73,8 +71,6 @@ et elle renvoie les informations suivantes sur le meilleur itinéraire :
 - le `temps d'arrivée` à chaque station
 
 **Algorithme utilisé** : [`shortest path`](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) de Dijkstra 
-
----
 
 # Calculer un itinéraire
 
