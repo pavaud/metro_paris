@@ -56,7 +56,7 @@ Le fichier [exploration.cpy](exploration.cyp) contient des requêtes `Cypher` pe
 2. Quel est le nombre de stations à moins de deux kilomètres de la station `LADEFENSE` (on pourra prendre la distance brute sans considération de relation) ?
 3. Combien de temps faut-il pour aller en metro de `LADEFENSE` à `CHATEAUDEVINCENNES` ?
 4. Combien de temps faut-il pour aller à pied de `LADEFENSE` à `CHATEAUDEVINCENNES` (on pourra considérer que tout le chemin se fait à pied, sans considération de relation) ?
-5. Est-il plus rapide de faire un changement à SAINTLAZARE pour aller de `MONTPARNASSEBIENVENUE` à `GABRIELPERI` ?
+5. Est-il plus rapide de faire un changement à `STLAZARE` pour aller de `MONTPARNASSEBIENVENUE` à `GABRIELPERI` ?
 6. Combien de stations se trouvent dans un rayon de 10 stations par train autour de `STLAZARE` ?
 7. Combien de stations se trouvent dans un rayon de 20 minutes par train autour de `STLAZARE` ?
 
@@ -70,7 +70,7 @@ et elle renvoie les informations suivantes sur le meilleur itinéraire :
 - les `lignes` de métro
 - le `temps d'arrivée` à chaque station
 
-**Algorithme utilisé** : [`shortest path`](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) de Dijkstra 
+**Algorithme utilisé** : [shortest path](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm) de Dijkstra 
 
 # Calculer un itinéraire
 
@@ -88,7 +88,7 @@ docker container run -p 7474:7474 -p 7687:7687 datascientest/neo4j
     - `http://ip_machine_virtuelle:7474` si on passe par une machine virtuelle.
     - http://localhost:7474 en local.
 
-La librairie `GraphDataScience` est chargée via l'image `Docker`, ce qui permet de faire des calcul de `plus court chemin` plus facilement.
+La librairie `GraphDataScience` est chargée via l'image Docker, ce qui permet de faire des calcul de *plus court chemin* plus facilement.
 
 ## Démarrer l'application
 Exécuter le script `route.py` avec deux points de coordonnées `x` et `y` en paramètres. Par ex:
