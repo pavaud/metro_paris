@@ -18,7 +18,7 @@ queries = [
     DETACH DELETE n
     """,
     """// inserting Nodes
-    LOAD CSV WITH HEADERS FROM 'https://raw.githubusercontent.com/pauldechorgnat/cool-datasets/master/ratp/stations.csv' AS row
+    LOAD CSV WITH HEADERS FROM 'data/stations.csv' AS row
     CREATE (:Station {
     name_clean: row.nom_clean,
     name:row.nom_gare,
@@ -29,7 +29,7 @@ queries = [
     line:row.ligne});
     """,
     """// Metro monnections
-    LOAD CSV WITH HEADERS FROM 'https://raw.githubusercontent.com/pauldechorgnat/cool-datasets/master/ratp/liaisons.csv' AS row
+    LOAD CSV WITH HEADERS FROM 'data/liaisons.csv' AS row
     MATCH (s1:Station) WHERE s1.name_clean = row.start AND s1.line = row.ligne
     MATCH (s2:Station) WHERE s2.name_clean = row.stop AND s2.line = row.ligne
     CREATE (s1)-[:METRO {name:s1.name_clean+'_to_'+s2.name_clean+'_line_'+row.ligne,
