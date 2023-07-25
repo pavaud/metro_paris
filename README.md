@@ -74,8 +74,6 @@ et elle renvoie les informations suivantes sur le meilleur itinéraire :
 
 # Calculer un itinéraire
 
-[revenir en haut](#metro-à-paris)
-
 ## Démarrer `Neo4j`
 
 `Docker` doit être installé sur la machine.
